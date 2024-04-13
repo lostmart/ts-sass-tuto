@@ -2,7 +2,7 @@ export interface IUser {
 	userName: string
 	imageUrl: string
 	post: string
-	color: number
+	color: Colors
 }
 enum Colors {
 	Primary = 1,
