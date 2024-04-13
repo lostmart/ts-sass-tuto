@@ -1,56 +1,50 @@
-var Colors;
-(function (Colors) {
-    Colors[Colors["Primary"] = 1] = "Primary";
-    Colors[Colors["Secondary"] = 2] = "Secondary";
-    Colors[Colors["Third"] = 3] = "Third";
-})(Colors || (Colors = {}));
-export const users = [
+const users = [
     {
         userName: "Rita Sanchezs",
         imageUrl: "01.webp",
         post: "CEO (Jefe de Jefes)",
-        color: Colors.Primary,
+        color: 1,
     },
     {
         userName: "Carlos Alberto",
         imageUrl: "02.webp",
         post: "Gerente General",
-        color: Colors.Primary,
+        color: 1,
     },
     {
         userName: "Donna Penchet",
         imageUrl: "03.webp",
         post: "Jefe de Marketing",
-        color: Colors.Secondary,
+        color: 1,
     },
     {
         userName: "Marcelo Hondogh",
         imageUrl: "04.webp",
         post: "Asistente de Marketing",
-        color: Colors.Secondary,
+        color:2,
     },
     {
         userName: "Eugenia Perez",
         imageUrl: "05.webp",
         post: "Jefe de ventas",
-        color: Colors.Secondary,
+        color: 2,
     },
     {
         userName: "Fabian Lembart",
         imageUrl: "06.webp",
         post: "Redactor inventario",
-        color: Colors.Secondary,
+        color: 2,
     },
     {
         userName: "Matilda Cerrucho",
         imageUrl: "07.jpg",
         post: "Letras y palabras",
-        color: Colors.Third,
+        color: 3,
     },
     {
         userName: "Juanco Pitufo",
         imageUrl: "08.webp",
         post: "Comunicaciones",
-        color: Colors.Third,
+        color: 3,
     },
 ];
