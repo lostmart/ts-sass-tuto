@@ -27,18 +27,27 @@ npm install
 This example shows how a factory function in TypeScript might be structured to create objects with different properties but similar methods.
 
 ```typescript
-function createPerson(name: string, age: number) {
-	return {
-		name: name,
-		age: age,
-		describe: function () {
-			return `${this.name} is ${this.age} years old.`
-		},
+function articleElement(user: IUser): HTMLElement {
+	const article = document.createElement("article")
+	article.className = "card"
+	article.classList.add(checkColor(user.color))
+	return article
+}
+
+function checkColor(color: number): string {
+	if (color === 1) {
+		return "jefes"
+	} else if (color === 2) {
+		return "marketing"
+	} else if (color === 3) {
+		return "communication"
+	} else {
+		return ""
 	}
 }
 
-const person1 = createPerson("Alice", 30)
-console.log(person1.describe()) // Output: Alice is 30 years old.
+const article = articleElement(user)
+console.log(article) // <article class="card jefes"></article>
 ```
 
 ## Deplyment test
